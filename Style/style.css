@@ -1,0 +1,208 @@
+header {
+    background: #323232;
+	height: 63px;
+}
+header ::after{
+    content: "";
+    width: 0px;
+    height:0px;
+    border-left: 47px solid transparent;
+    border-right: 47px solid transparent;
+    border-top: 24px solid #323232;
+    position: absolute;
+    left: 50%;
+    top: 63px;
+    margin-left: -25px;
+    transform: translateX(-50%)
+}
+
+span.circle {
+    width: 2px;
+    height: 2px;
+    border-radius: 100%;
+ }
+.hexagon {
+	width: 180px;
+    height: 203px;
+	background: #fff;
+	position: relative;
+	margin: 9px ;
+}
+.hexagon:before {
+	content: "";
+	position: absolute;
+	top: 0px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 90px solid #fff;
+	border-right: 90px solid #fff;
+	border-bottom: 54px solid transparent;
+}
+.hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: 0px ; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 90px solid #fff;
+	border-right: 90px solid #fff;
+	border-top: 54px solid transparent;
+	
+
+}
+.hexagon img {
+    width: 180px;
+	height: 203px;
+	z-index: 5;
+}
+.hexagonpict {
+	display: inline-block;
+	width: 424px;
+    height: 207px;
+	background: #2eb398;
+	}
+.hexagonpict :before {
+	content: "";
+	position: absolute;
+	top: 0px; 
+	left: 0px;
+	width: 0;
+	height: 0;
+	border-left: 90px solid #2eb398;
+	border-right: 90px solid #2eb398;
+	border-bottom: 54px solid transparent;
+	z-index: 10;
+}
+.hexagonpict :after {
+	content: "";
+	position: absolute;
+	bottom: 0px ; 
+	left: 120px;
+	width: 0;
+	height: 0;
+	border-left: 90px solid #2eb398;
+	border-right: 90px solid #2eb398;
+	border-top: 54px solid transparent;
+	}
+.pic {
+    width: 424px;
+	height: 207px;
+}
+.andersen {
+	display: inline;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 30px;
+	color: rgba(215, 252, 245, 255);
+	text-align: justify;
+}
+.illustration {
+	display: flex;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 18pt;
+	color: rgba(32, 129, 109, 255);
+	text-align: justify;
+}
+.text1 {
+	display: flex;
+	font-family: 'Lato', sans-serif;
+	font-size: 12pt;
+	color: rgba(215, 252, 245, 255);
+	text-align: justify;
+}
+.smith {
+	background-color: #2eb398;
+	width: 100%;
+	height: 341px;
+}
+.smith::after {
+	width: 200px;
+	height: 100px;
+	background: red;
+}
+
+.smith::before {
+	width: 200px;
+	height: 100px;
+	background: red;
+}
+
+.row .hexagon {
+	display: inline-block;
+}
+.row {
+	max-width: 1020;
+	margin: 0 auto;
+}
+
+.menu {
+	display: flex
+}
+.menu-item {
+		margin-left: 24px;
+}
+
+.menu-link {
+font-family: 'Lato', sans-serif;
+font-size: 7.21379pt;
+color: rgba(255, 255, 255, 255);
+text-align: justify;
+}
+.menu-link:hover {
+	color: rgba(46, 179, 152, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background: #222;
+	height: 43px;
+}
+.footer {
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 8.65655pt;
+	color: rgba(69, 69, 69, 255);
+	text-align: justify;
+
+}
