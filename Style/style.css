@@ -1,26 +1,58 @@
+
 header {
     background: #323232;
-	height: 63px;
-}
-header ::after{
+    width: 1020px;
+    height: 63px;
+  }
+header::after{
     content: "";
-    width: 0px;
-    height:0px;
+    height: 0;
+    width: 0;
     border-left: 47px solid transparent;
     border-right: 47px solid transparent;
     border-top: 24px solid #323232;
     position: absolute;
-    left: 50%;
+    left: 794px;
     top: 63px;
-    margin-left: -25px;
+    margin-left: -285px;
     transform: translateX(-50%)
 }
 
-span.circle {
-    width: 2px;
-    height: 2px;
-    border-radius: 100%;
- }
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+.menu_item {
+    display: inline-block;
+    text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	font-size: 7.21379pt;
+    color: rgba(255, 255, 255, 255);
+  	margin-top: 32px;
+}
+a {
+    color: rgba(255, 255, 255, 255);
+	text-decoration: none;
+}
+a:hover {
+	color: rgba(46, 179, 152, 255);
+}
+.menu_item:first-child{
+    margin-left: 325px;
+}
+.menu_item:nth-child(2){
+    margin-right: 77px;
+    margin-left: 26px;
+}
+.menu_item:last-child{
+    margin-left: 26px;
+}
+.logo {
+    position: relative;
+    top: 10px;
+    left: -38px;
+}
 .hexagon {
 	width: 180px;
     height: 203px;
@@ -49,33 +81,136 @@ span.circle {
 	border-left: 90px solid #fff;
 	border-right: 90px solid #fff;
 	border-top: 54px solid transparent;
-	
-
-}
+	}
 .hexagon img {
     width: 180px;
 	height: 203px;
 	z-index: 5;
 }
-.hexagonpict {
+.row1 .hexagon {
+	display: inline-block;
+}
+.row2 .hexagon {
+	display: inline-block;
+}
+.row3 .hexagon {
+	display: inline-block;
+}
+.row1 {
+	max-width: 1020;
+	margin: 0 auto;
+	position: relative;
+	top: 81px;
+    left: 107px;
+}
+.row1::before{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: -79px;
+    top: -69px;
+	width: 410px;
+	height: 1px;
+	background: #e4e9eb;
+}
+.row1::after{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+    left: 471px;
+    top: -69px;
+	width: 410px;
+	height: 1px;
+	background: #e4e9eb;
+}
+.row2 {
+	max-width: 1020;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	top: 27px;
+    left: 5px;
+}
+
+.row3 {
+	max-width: 1020;
+	margin: 0 auto;
+	position: relative;
+	top: -24px;
+    left: 107px;
+}
+.row3::before{
+	content: "";
+	position: absolute;
+	bottom: 57px;
+    left: -10px;
+   	width: 1px;
+	height: 104px;
+	background: #e4e9eb;
+}
+.row3::after{
+	content: "";
+	position: absolute;
+	bottom: 57px;
+	left: 812px;
+   	width: 1px;
+	height: 104px;
+	background: #e4e9eb;
+}
+.footer {
+	display: inline-block;
+	background: #222;
+	height: 43px;
+	width: 1020px;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 8.65655pt;
+	color: rgba(69, 69, 69, 255);
+	}
+.footer::before {
+	content: "";
+	position: absolute;
+	bottom: -274px;
+    left: 29px;
+   	width: 960px;
+	height: 1px;
+	background: #e4e9eb;
+}
+
+.copyright {
+	display: inline-block;
+	position: relative;
+    left: 40px;
+    top: 15px;
+}
+main {
+		position: relative;
+}
+.scroll {
+	width: 1020px;
+	height: 58px;
+}
+.hexagon1 {
 	display: inline-block;
 	width: 424px;
-    height: 207px;
+	height: 207px;
+	top: 67px;
 	background: #2eb398;
+	position: relative;
+	overflow: hidden;
+	position: relative;
 	}
-.hexagonpict :before {
+.hexagon1:before {
 	content: "";
 	position: absolute;
 	top: 0px; 
-	left: 0px;
+	left: 120px;
 	width: 0;
 	height: 0;
 	border-left: 90px solid #2eb398;
 	border-right: 90px solid #2eb398;
-	border-bottom: 54px solid transparent;
-	z-index: 10;
+	border-bottom: 53px solid transparent;
 }
-.hexagonpict :after {
+.hexagon1:after {
 	content: "";
 	position: absolute;
 	bottom: 0px ; 
@@ -84,125 +219,416 @@ span.circle {
 	height: 0;
 	border-left: 90px solid #2eb398;
 	border-right: 90px solid #2eb398;
-	border-top: 54px solid transparent;
+	border-top: 51px solid transparent;
 	}
-.pic {
+.hexagon1 img {
     width: 424px;
 	height: 207px;
 }
-.andersen {
-	display: inline;
+
+
+.andersen1 {
+	display: inline-block;
 	font-family: 'Maven Pro', sans-serif;
 	font-size: 30px;
 	color: rgba(215, 252, 245, 255);
 	text-align: justify;
+	position: relative;
+	top: -118px;
+    left: -114px;
+    z-index: 2;
+
 }
-.illustration {
-	display: flex;
+.illustration1 {
+	display: inline-block;
 	font-family: 'Maven Pro', sans-serif;
-	font-size: 18pt;
+	font-size: 13pt;
 	color: rgba(32, 129, 109, 255);
 	text-align: justify;
+	position: relative;
+	top: -97px;
+    left: -329px;
+	z-index: 2;
 }
 .text1 {
-	display: flex;
-	font-family: 'Lato', sans-serif;
-	font-size: 12pt;
-	color: rgba(215, 252, 245, 255);
-	text-align: justify;
+	width: 581px;
+    height: 76px;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+	font-size: 9pt;
+    color: rgba(215, 252, 245, 255);
+    text-align: justify;
+    position: relative;
+    top: -83px;
+    left: 318px;
+    z-index: 8;
+    line-height: 1.9;
 }
-.smith {
+.smith1 {
 	background-color: #2eb398;
-	width: 100%;
+	width: 1020px;
 	height: 341px;
 }
-.smith::after {
-	width: 200px;
-	height: 100px;
-	background: red;
+.smith1::before {
+	content: "";
+	position: absolute;
+	bottom: 0px ; 
+	left: 300px;
+	top: 788px;
+	width: 124px;
+	height: 207px;
+	background: #2eb398;
+	z-index: 1;
+	}
+
+.smith1::after {
+	content: "";
+	position: absolute;
+	bottom: 0px ; 
+	left: 0px;
+	top: 788px;
+	width: 120px;
+	height: 207px;
+	background: #2eb398;
+	}
+	
+.andersen1::after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: -216px;
+    top: -51px;
+	width: 1px;
+	height: 316px;
+	background: #219d84;
 }
-
-.smith::before {
-	width: 200px;
-	height: 100px;
-	background: red;
-}
-
-.row .hexagon {
-	display: inline-block;
-}
-.row {
-	max-width: 1020;
-	margin: 0 auto;
-}
-
-.menu {
-	display: flex
-}
-.menu-item {
-		margin-left: 24px;
-}
-
-.menu-link {
-font-family: 'Lato', sans-serif;
-font-size: 7.21379pt;
-color: rgba(255, 255, 255, 255);
-text-align: justify;
-}
-.menu-link:hover {
-	color: rgba(46, 179, 152, 255);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.header-wrap {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-.navigation {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    background: #222;
-	height: 43px;
+.text1::after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+    left: 602px;
+    top: -113px;
+	width: 1px;
+	height: 316px;
+	background: #219d84;
 }
 .footer {
+	display: inline-block;
+	background: #222;
+	height: 43px;
+	width: 1020px;
 	font-family: 'Maven Pro', sans-serif;
 	font-size: 8.65655pt;
 	color: rgba(69, 69, 69, 255);
-	text-align: justify;
+    }
+    .copyright {
+        display: inline-block;
+        position: relative;
+        left: 40px;
+        top: 15px;
+    }
+    .input {
+        display: inline-block;
+        background: #323232;
+        width: 1020px;
+        height: 565px;
+        margin-bottom: -6px;
+        overflow: hidden;
+    }
+  .Get_in{
+     
+    width: 184px;
+    height: 22px;
+    margin-top: 66px;
+    margin-left: 119px;
+    margin-bottom: 11px;
+    letter-spacing: 0.3px;
+    font-family: 'MavenProRegular', sans-serif;
+    font-size: 30px;
+    color: rgba(224, 224, 224, 255);
+    text-align: justify;
+  }
+.in_order{
+    width: 440px;
+    height: 17px;
+    margin-left: 121px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.3px;
+    word-spacing: 0.65px;
+    color: rgba(190, 190, 190, 255);
+    text-align: justify;
+}
+.Quisque {
+    display: inline-block;
+    width: 185px;
+    height: 117px;
+    position: relative;
+	top: -310px;
+    left: -304px;
+    font-family: 'Lato-Regular', sans-serif;
+    font-size: 11px;
+    line-height: 21px;
+    word-spacing: -3px;
+    letter-spacing: 0.8px;
+    color: rgba(224, 224, 224, 255);
+    text-align: justify;
+}
+.coordinates {
+    display: inline-block;
+    width: 121px;
+    height: 54px;
+    position: relative;
+    top: -209px;
+    left: -469px;
+    line-height: 22px;
+    font-family: 'Lato-Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+    font-size: 12px;
+    color: rgba(190, 190, 190, 255);
+    text-align: left;
+}
+.name{
+    width: 580px;
+    height: 38px;
+    border: none;
+    background: #454545;
+    color: #a3a3a3;
+    margin-bottom: 16px;
+    margin-top: 19px;
+}
+.e-mail{
+    width: 580px;
+    height: 35px;
+    border: none;
+    background: #454545;
+    color: #a3a3a3;
+    margin-bottom: 16px;
+}
+.subject{
+    width: 580px;
+    height: 35px;
+    border: none;
+    background: #454545;
+    color: #a3a3a3;
+    margin-bottom: 16px;
+}
+.message {
+    font-family: 'Lato-Regular', 'AdobeInvisFont', 'MyriadPro-Regular';
+    font-size: 12px;
+    color: rgba(190, 190, 190, 255);
+    text-align: justify;
+    width: 575px;
+    height: 150px;
+    border: none;
+    background: #454545;
+    margin-bottom: 16px;
+}
+.button {
+    display: block;
+    width: 90px;
+    height: 37px;
+    background: #2eb398;
+    color: #b4eadf;
+    border: none;
+    margin-left: 610px;
+}
+.message,.subject,.name,.e-mail  {
+    margin-left: 121px;
+}
+.social {
+	display: inline-block;
+	text-decoration: none;
+	margin-left: -2px;
+	box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+}
+.social_t {
+	display: inline-block;
+	position: relative;
+	top: 34px;
+    left: 437px;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+	font-family: 'fontello';
+	src: url('../font/fontello.eot?86059640');
+	src: url('../font/fontello.eot?86059640#iefix') format('embedded-opentype'),
+		 url('../font/fontello.woff2?86059640') format('woff2'),
+		 url('../font/fontello.woff?86059640') format('woff'),
+		 url('../font/fontello.ttf?86059640') format('truetype'),
+		 url('../font/fontello.svg?86059640#fontello') format('svg');
+	font-weight: normal;
+	font-style: normal;
+  }
+  /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+  /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+  /*
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+	  font-family: 'fontello';
+	  src: url('../font/fontello.svg?86059640#fontello') format('svg');
+	}
+  }
+  */
+   
+   [class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: "fontello";
+	font-style: normal;
+	font-weight: normal;
+	
+   
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	/* opacity: .8; */
+   
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+   
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1em;
+   
+	/* Animation center compensation - margins should be symmetric */
+	/* remove if not needed */
+	margin-left: .2em;
+   
+	/* you can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+   
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+   
+	/* Uncomment for 3D effect */
+	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+   
+  .icon-linkedin:before { content: '\e800'; } /* '' */
+  .icon-gplus:before { content: '\e801'; } /* '' */
+  .icon-dribbble:before { content: '\e802'; } /* '' */
+  .icon-twitter:before { content: '\e803'; } /* '' */
+  .icon-facebook:before { content: '\f09a'; } /* '' */
+  .icon-pinterest:before { content: '\f231'; } /* '' */
+
+  .social_list li {
+	  display: inline-block;
+  }
+ .item_social_facebook {
+	 text-decoration: none;
+	 color: #04ac95;
+	 display: flex;
+	 justify-content: center;
+	 align-content: center;
+	 margin-left: -2px;
+	 width: 24px;
+	 height: 24px;
+	 background: #a4dbd4;
+ } 
+ .item_social_facebook:hover {
+	 background: #4E71A8;
+	 color: #fff
+ }
+ .item_social_twitter {
+	text-decoration: none;
+	color: #04ac95;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-left: -2px;
+	width: 24px;
+	height: 24px;
+	background: #6ccbbe;
+} 
+.item_social_twitter:hover {
+	background: #55ACEE;
+	color: #fff
+}
+.item_social_google {
+	text-decoration: none;
+	color: #04ac95;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-left: -2px;
+	width: 24px;
+	height: 24px;
+	background: #7ed0c5;
+} 
+.item_social_google:hover{
+	background: #E85858;
+	color: #fff
+}
+.item_social_pinterest {
+	text-decoration: none;
+	color: #04ac95;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-left: -2px;
+	width: 24px;
+	height: 24px;
+	background: #abddd7;
+} 
+.item_social_pinterest:hover{
+	background: #9E1B20;
+	color: #fff
+}
+.item_social_linked {
+	text-decoration: none;
+	color: #04ac95;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-left: -2px;
+	width: 24px;
+	height: 24px;
+	background: #acddd7;
+}
+.item_social_linked:hover{
+	background: #1686B0;
+	color: #fff
+} 
+.item_social_dribbble {
+	text-decoration: none;
+	color: #04ac95;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-left: -2px;
+	width: 24px;
+	height: 24px;
+	background: #6dcbbe;
+} 
+.item_social_dribbble:hover{
+	background: #FFFFFF;
+	color: #000;
 }
